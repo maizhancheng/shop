@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Taobao</string>
+
+
+    <string name="guide_enter_firstpage">进入首页</string>
+
+    <string name="home_tab">首页</string>
+    <string name="nav_sign_in">签到</string>
+    <string name="tata_tab">她她圈</string>
+    <string name="car_tab">购物车</string>
+    <string name="mine_tab">我的</string>
+</resources>

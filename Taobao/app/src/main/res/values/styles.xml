@@ -1,0 +1,23 @@
+<resources>
+
+    <!-- Base application theme. -->
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>   <!-- 状态栏 -->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>   <!-- toolbar -->
+        <item name="colorAccent">@color/colorAccent</item>   <!-- 重点 -->
+    </style>
+
+    <style name="AppTheme.Main" parent="AppTheme" />
+
+    <!-- 无用 -->
+    <style name="NormalTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/white</item>   <!-- 状态栏 -->
+        <item name="colorPrimaryDark">@color/transparent</item>   <!-- toolbar -->
+        <item name="colorAccent">@color/colorAccent</item>   <!-- 重点 -->
+    </style>
+
+
+</resources>
