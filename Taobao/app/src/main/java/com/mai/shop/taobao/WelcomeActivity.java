@@ -54,7 +54,7 @@ public class WelcomeActivity extends Activity implements SplashView{
             public void onAnimationEnd(Animator animation) {
                 super.onAnimationEnd(animation);
                 //启动引导页
-                startActivity(new Intent(WelcomeActivity.this,MainActivity.class));
+                startActivity(new Intent(WelcomeActivity.this,GuideActivity.class));
             }
         });
     }
