@@ -19,7 +19,7 @@ import android.widget.TextView;
 
 import com.mai.shop.taobao.lib.menu.SlidingMenu;
 import com.mai.shop.taobao.pro.buy.view.BuyFragment;
-import com.mai.shop.taobao.pro.home.view.HomeFragment;
+import com.mai.shop.taobao.pro.home.view.fragment.HomeFragment;
 import com.mai.shop.taobao.pro.mine.view.MineFragment;
 import com.mai.shop.taobao.pro.tata.view.TaTaFragment;
 import com.mai.shop.taobao.utils.DisplayUtil;

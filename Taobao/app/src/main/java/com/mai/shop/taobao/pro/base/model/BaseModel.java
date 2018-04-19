@@ -1,5 +1,7 @@
 package com.mai.shop.taobao.pro.base.model;
 
+import android.content.Context;
+
 import com.mai.shop.taobao.mvp.model.MvpModel;
 
 /**
@@ -7,4 +9,13 @@ import com.mai.shop.taobao.mvp.model.MvpModel;
  */
 
 public abstract class BaseModel implements MvpModel {
+    private Context context;
+    public BaseModel(Context context){
+        this.context = context;
+    }
+
+    public Context getContext(){
+        return this.context;
+    }
+
 }

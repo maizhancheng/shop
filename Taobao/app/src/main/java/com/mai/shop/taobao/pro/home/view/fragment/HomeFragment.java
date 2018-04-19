@@ -1,11 +1,12 @@
-package com.mai.shop.taobao.pro.home.view;
+package com.mai.shop.taobao.pro.home.view.fragment;
 
 import android.view.View;
 import android.widget.LinearLayout;
-
 import com.mai.shop.taobao.R;
 import com.mai.shop.taobao.pro.base.view.BaseFragment;
 import com.mai.shop.taobao.pro.base.view.navigation.impl.HomeNavagion;
+import com.mai.shop.taobao.pro.home.presenter.HomePresenter;
+import com.mai.shop.taobao.pro.home.view.HomeView;
 import com.mai.shop.taobao.utils.ToastUtil;
 
 /**
@@ -14,8 +15,18 @@ import com.mai.shop.taobao.utils.ToastUtil;
  * @date
  */
 
-public class HomeFragment extends BaseFragment {
+public class HomeFragment extends BaseFragment<HomePresenter,HomeView> implements HomeView{
 
+    @Override
+    public HomePresenter bindPresenter() {
+        return new HomePresenter(getActivity());
+    }
+
+    //绑定view接口
+    @Override
+    public HomeView bindView() {
+        return this;
+    }
 
     @Override
     public int bindLayoutId() {
@@ -25,6 +36,8 @@ public class HomeFragment extends BaseFragment {
     @Override
     public void initContentView(View contentView) {
         initNavigation(contentView);
+        //获取数据
+        getPresenter().loadHomeList(10,"13678");
     }
 
     private void initNavigation(View contentView){
@@ -47,6 +60,12 @@ public class HomeFragment extends BaseFragment {
                     }
                 }).create().build();
     }
+
+    @Override
+    public void onHomeListResult(Object data) {
+        //解析json
+    }
+
 
 }
 

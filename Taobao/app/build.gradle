@@ -10,12 +10,12 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-        jackOptions{
+        jackOptions {
             enabled true
 //            enabled false
         }
     }
-    compileOptions{
+    compileOptions {
         sourceCompatibility 1.7
         targetCompatibility 1.7
     }
@@ -42,7 +42,11 @@ dependencies {
     })
     compile 'com.android.support:appcompat-v7:25.3.1'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.huxq17.xrefreshview:xrefreshview:3.5.1'
+    compile 'com.google.code.gson:gson:2.6.2'
+    compile 'com.android.support:recyclerview-v7:26.0.0-alpha1'
+    compile 'com.android.support:design:26.0.0-alpha1'
     testCompile 'junit:junit:4.12'
-//    compile 'org.webrtc:google-webrtc:1.0.+'
-//    compile 'com.github.nkzawa:socket.io-client:0.4.2'
+
+
 }

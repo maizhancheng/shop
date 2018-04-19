@@ -34,6 +34,10 @@ public abstract class MvpFragment<P extends MvpPresenter,V extends MvpView> exte
      */
     public abstract P bindPresenter();
 
+    public P getPresenter(){
+        return this.presenter;
+    };
+
     /**
      * 绑定具体View
      * @return
